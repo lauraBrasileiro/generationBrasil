@@ -1,0 +1,20 @@
+<script>
+		var salario, acrescimo, novoSalario, nome
+
+		nome= prompt("Oi, qual seu nome? ")
+		salario= prompt("Diga seu salario por favor: ")
+
+		if (salario >= 5000){
+			acrescimo = (salario*0.05)
+			alert ("VOCÊ TEM DIREITO A RECEBER 5% DE AUMENTO SALARIAL. \nO VALOR DO SEU AUMENTO É, " + acrescimo )
+		}
+		else {
+			acrescimo = (salario*0.10)
+			alert ("VOCÊ TEM DIREITO A RECEBER 10% DE AUMENTO SALARIAL. \nO VALOR DO SEU AUMENTO É, " + acrescimo)
+		}
+
+		    novoSalario = acrescimo + salario 
+		    alert ("\nSEU NOVO SALARIO É " + novoSalario + "\nUSE O SEU AUMENTO COM CONSICENCIA. ATÉ MAIS")
+
+	}
+</script>

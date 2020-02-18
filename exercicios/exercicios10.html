@@ -1,0 +1,24 @@
+<script>
+    var nota1, nota2, resultado, nome;
+	    nome = prompt ("BOM DIA, QUAL SEU NOME: ")
+        nota1= parseFloat(prompt ("DIGITE SUA 1ª NOTA, POR FAVOR: "))
+        nota2= parseFloat(prompt ("DIGITE SUA 2ª NOTA, POR FAVOR: "))
+		resultado = ((nota1 + nota2)/2)
+		resultado = resultado.toFixed(2)
+        
+        prompt ("OLÁ, " + nome + ". SUA MÉDIDA É " + resultado)
+
+if(resultado>= 7){
+    prompt ("\nPARABÉNS, VOCÊ ATINGIU A MÉDIA, CONTINUE MELHORANDO!")
+}
+else{
+    
+    if(resultado<= 5){
+        alert ("\nVOCÊ AINDA NÃO CONSEGUIU ATINGIR A MÉDIA, CONTINUE TENTANDO!")
+       }
+    else{
+        alert ("\nVOCÊ FICOU DE EXAME, ESTUDE MAIS E FAÇA A PROVA NOVAMENTE")
+       }
+}
+    
+</script>

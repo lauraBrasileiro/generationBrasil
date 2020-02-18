@@ -1,0 +1,34 @@
+<script>
+        var media, n1, n2, n3, resultado, nome;
+
+		//entrada de dados 
+        
+        nome= prompt("QUAL SEU NOME?");
+        n1= prompt("SUA 1ª NOTA");
+        n1= parseFloat(n1);
+        // conversão do nota em numero real ao inves de literal
+        // é possivel juntar os dos n1s nas linhas 7 e 8 assim:
+        //      n1=parseFloat(prompt("SUA 1ª NOTA"))
+        n2= prompt("SUA 2ª NOTA");
+        n2= parseFloat(n2);
+        n3= prompt("SUA 3ª NOTA");
+        n3= parseFloat(n3);
+        // fim da entratada de dados 
+
+        // processamento
+        media = (n1+n2+n3)/3;
+        media = media.toFixed(1);
+        // para fazer aproximação e qualquer procedimento matematico usamos Math
+
+        if (media>=7) {
+            resultado= "Aprovado";
+        }
+        else {
+            resultado= "Reprovado";
+        }
+
+        //final do processamento / Saida
+
+        alert (nome + ". SUA MÉDIDA É " + media + "e foi" + resultado);
+
+</script>
