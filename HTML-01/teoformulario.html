@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="assets/css/formulario.css">
+</head>
+<body>
+    <h1>Formulário</h1>
+    <div id="caixa">
+        
+        <br>
+        <br>
+        <!-- ACTION = arquivos que usamos para armazenar no banco de dados do cadastro
+            LABEL = para abrir o que o cliene tem que digitar
+            TYPE = tipo do texto
+            NAME = nome do arquivo 
+            id=""> ???????? 
+            maxlength = numero de caracteries aceitas 
+            size = tamanho da letra
+            value = vai para o banco de dados
+        -->
+        <main>
+            <form action="#" method="POST">
+                <!-- <label for="">Nome:</label> 
+                Para aparecer por fora
+                -->
+                <input type="text" name="nome" maxlength= "40" size="50" placeholder="Digite aqui seu nome" required>
+                <br><br>
+                
+                <label for="">Idade:</label>
+                <input type="number" name="idade" min="18" max="29">
+                <br><br>
+
+                <label for="">Nascimento:</label>
+                <input type="date" name="nascimento">
+                <br><br>
+
+                <label for="">Observação:</label>
+                <textarea rows="4" cols="20" name="observacao"></textarea>
+                <br><br>
+
+                <select name="Estados" id="">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RS">Rio Grande do sul</option>
+
+                </select>
+                <br><br>
+
+                <label for="">Senha</label>
+                <input type="password" name="senha">
+                <br><br>
+
+                <label for="">Gênero:</label>
+                <input type="radio" name="genero" id="f" value="F">
+                <label for="">Feminino</label>
+                <input type="radio" name="genero" id="m" value="M">
+                <label for="">Masculino</label>
+                <input type="radio" name="genero" id="o" value="O">
+                <label for="">Outros</label>
+                <br><br>
+
+                <input type="checkbox" name="" id="">
+                <label for="">Almoço</label>
+                <input type="checkbox" name="" id="">
+                <label for="" >Vale Transporte</label>
+                <br><br>
+
+                <input type="submit" value="enviar">
+                <input type="reset" value="limpar tela">
+
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+/* 
+sintaxe:
+elemento{propriedade:valor;
+    propriedade:valor}
+*/
+/* seletor de elemento */
+body{
+    background: rgb(250, 234, 237);
+}
+h1{
+    color:rgb(88, 87, 87);
+    text-align: center;
+    font-size: 40px;
+    font-family:Arial, monospace;
+
+}
+#paragrafo1 {
+    color:rgb(98, 75, 129);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px; 
+}
+#paragrafo2 {
+    font-style: italic;
+    font-size: 20px; 
+    font-family: Arial, sans-serif;
+    background: rgb(202, 250, 234);
+}
+.grupo1 {
+    font-size: 30px;
+    font-style: italic;
+}
+.grupo2{
+    font-size: 30px;
+    text-align: right;
+}
